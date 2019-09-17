@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@font-face
+{
+	src: url(../fonts/Lora-Bold.ttf);
+	font-family: 'Lora', serif;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face
+{
+	src: url(../fonts/Lora-Regular.ttf);
+	font-family: 'Lora', serif;
+	font-weight: normal;
+	font-style: normal;
+}
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Lora', serif;
+}
+.header
+{
+	padding: 5px;
+	background: url(../img/0084-bodybg.png) no-repeat;
+	background-size: cover;
+	height: auto;
+	font-weight: bold;
+}
+.nav-icon
+{
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/icons8-menu-64.png);
+	border: 1px solid #99CCCC;
+	border-radius: 50%;
+	box-shadow: none;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.main-nav
+{
+	display: none;
+	position: fixed;
+	width:  100%;
+	top: 0;
+	right: 0;
+	padding: 10px 0;
+	background: rgba(0,51,51,0.5);
+}
+.main-nav__item
+{
+	display: inline-block;
+	font-size: 0;
+}
+.main-nav__link
+{
+	font-size: 16px;
+	text-decoration: none;
+	margin-right: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: background 0.5s linear;
+}
+.main-nav__link:hover
+{
+	background: #006666;
+}
+.header-info
+{
+	margin: 10% auto;
+	color: #CCFFFF;
+	text-align: center;
+	font-size: 10px;
+}
+.header-info__caption
+{
+	text-transform: uppercase;
+	letter-spacing: 12px;
+}
+.header-info__subcaption
+{
+	margin-bottom: 60px;
+}
+.button
+{
+	text-decoration: none;
+	width: 200px;
+	height: 40px;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #009999;
+	margin: 10px;
+	border-radius: 8px;
+	background-color: #00CCCC;
+	box-shadow: 0 0 15px rgb(0, 153, 153);
+	padding: 10px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: all 0.5s linear;
+}
+.button:hover
+{
+	background-color: #1E90FF;
+	color: #F0FFFF;	
+}
+.caption
+{
+	text-transform: uppercase;
+	font-size: 18px;
+	padding-bottom: 60px;
+	color: #003333;
+}
+.caption:before
+{
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	width: 10%;
+	height: 2px;
+	background: #999999;
+	position: relative;
+	top: -2px;	
+	right: 10px;
+}
+.caption:after
+{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 10%;
+	height: 2px;
+	background: #999999;
+	position: relative;
+	top: -2px;
+	left: 10px;
+}
+.resp-img
+{
+	max-width: 100%;
+	height: auto;
+}
+.biography, .projects, .technologies-used, .contact-form, .contacts
+{
+	padding: 60px 0;
+}
+.biography__img
+{
+	width: 30%;
+	border: 1px solid grey;
+	border-radius: 50%;
+	box-shadow: 0 0 10px 2px rgba(153,153,153,1);
+}
+.biography__sv
+{
+	padding: 10px;
+	line-height: 30px;
+}
+.biography__main
+{
+	color: #009999;
+	font-weight: bold;
+}
+.projects__example
+{
+	margin-bottom: 20px;
+}
+.project__image
+{
+	width: 250px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #B0E0E6;
+	box-shadow: 0 0 20px 2px rgba(173,216,230,0.8);
+}
+.technologies__item
+{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.projects, .contact-form
+{
+	background: rgba(224,255,255,0.5);
+}
+.contact-form__name, .contact-form__email, .contact-form__textmessage
+{
+	width: 80%;
+	margin-bottom: 20px;
+	height: 35px;
+	border: 1px solid #CCC;
+	font-size: 18px;
+}
+.contact-form__textmessage
+{
+	margin-bottom: 30px;
+	height: 100px;
+}
+.contacts__phonenumber:before
+{
+ 	content: url(../img/icons8-телефон-24.png);	
+ 	position: relative;
+ 	top: 8px;
+}
+.contacts__gmail:before
+{
+	content: url(../img/icons8-вход-в-gmail-24.png);
+	position: relative;
+ 	top: 3px;
+}
+.contacts__links
+{
+	text-decoration: none;
+}
+.contacts__socials
+{
+	margin-top: 30px;
+}
+.contacts__facebook
+{
+	margin-right: 20px;
+}
+.footer__copyright
+{
+	font-size: smaller;
+	margin-top: 25px;
+}
+.contacts__list
+{
+	list-style-type: none;
+}
+.footer
+{
+	background: url(../img/0084-bodybg.png);
+	background-size: cover;
+	color: #fff;
+	height: 60px;
+}
+.footer__link
+{
+	text-decoration: none;
+	color: #fff;
+}
+@media only screen and (min-width: 64em) {
+	.nav-icon
+	{
+		display: none;
+	}
+	.main-nav
+	{
+		display: inline-block;
+	}
+	.header-info__caption
+	{
+		font-size: 40px;
+	}
+	.header-info__subcaption
+	{
+		font-size: 20px;
+	}
+	.biography__img
+	{
+		width: 50%;
+	}
+	.biography__sv
+	{
+		padding-right: 40px;
+	}
+	.projects__example
+	{
+		display: inline-block;
+		margin: 2%;
+	}
+	.project__image
+	{
+		width: 400px;
+	}
+	.technologies__item
+	{
+		margin-right: 50px;
+	}
+	.contact-form__name, .contact-form__email, .contact-form__textmessage
+	{
+		width: 20%;
+	}
+	.contacts__socials
+	{
+		margin-top: 0;
+	}
+}

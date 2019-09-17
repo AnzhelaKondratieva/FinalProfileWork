@@ -1,0 +1,129 @@
+.container
+{
+	width: 722px;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+.clearfix
+{
+	clear:both;
+}
+.header
+{
+	border: 1px solid #000;
+}
+.logo
+{
+	width: 208px;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 30px 60px 23px 20px;
+}
+.nav
+{
+	width: 491px;
+	list-style-type: none;
+	margin-top: 43px;
+	margin-left: 108px;
+	margin-bottom: 36px;
+}
+.nav__item
+{
+	text-align: center;
+	float: left;
+}
+.nav__link
+{
+	display: block;
+	margin: 0 16px;
+}
+.sidebar__container
+{
+	width: 250px;
+	float:left;
+	height: 602px;
+	border: 1px solid #000;
+}
+.sidebar__item
+{
+	width: 250px;
+	border: 1px solid #000;
+}
+.sidebar__computers
+{
+	list-style-image: url(../img/computer.png);
+	margin-left: 15px;
+}
+.sidebar__screens
+{
+	list-style-image: url(../img/screens.png);
+	margin-left: 15px;
+}
+.sidebar__keyboards
+{
+	list-style-image: url(../img/keyboards.png);
+	margin-left: 15px;
+}
+.sidebar__list
+{
+	padding-left: 15px;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+.content
+{
+	width: 465px;
+	float: right;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 0;
+	text-decoration: underline;
+}
+.content__image
+{
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-right: 49px;
+}
+.content__title
+{
+	padding-left: 160px;
+}
+.content__text
+{
+	margin-bottom: 40px;
+}
+.footer
+{
+	border: 1px solid #000;
+}
+.col
+{
+	width: 240px;
+	float: left;
+}
+.footer__nav
+{
+	list-style-type: none;
+	margin-top: 40px;
+}
+.footer__item
+{
+	text-align: center;
+	float: left;
+}
+.footer__image
+{
+	width: 240px;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.footer__link
+{
+	display: block;
+	margin: 0 16px;
+	overflow: hidden;
+}

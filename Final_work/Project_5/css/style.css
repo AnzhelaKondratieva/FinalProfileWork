@@ -1,0 +1,53 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.clearfix
+{
+	clear: both;
+}
+.ac
+{
+	height: 320px;
+	border: 1px solid rgba(155,155,155,0.3);
+	width: 396px;
+}
+.ac-label
+{
+	height: 100%;
+	display: block;
+	float: left;
+	padding: 60px 20px;
+	background: linear-gradient(to left, #ffffff 1%, #eaeaea 100%);
+	text-transform: uppercase;
+	color: #3d7489;
+	font-weight: 800;
+	cursor: pointer;
+	border-right: 1px solid rgba(155,155,155,0.3);
+}
+.ac__text-wrap
+{
+	float: left;
+	width: 0;
+	height: 320px;
+	display: block;
+	overflow: hidden;
+	transition: width 0.3s linear;
+}
+.ac__text
+{
+	padding: 45px 15px;
+	text-align: justify;
+	height: 100%;
+	border-right: 1px solid rgba(155,155,155,0.3);
+}
+.ac__logic
+{
+	display: none;
+}
+.ac__logic:checked ~ .ac__text-wrap
+{
+	width: 180px;
+}

@@ -1,0 +1,138 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face
+{
+	font-family: "HelveticaNeue";
+	src:url(../fonts/HelveticaNeue.ttf);
+}
+.clearfix
+{
+	clear: both;
+}
+body
+{
+	font-family: "HelveticaNeue";
+}
+.popup
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	z-index: 10;
+}
+.popup:before
+{
+	z-index: 1;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #372f2b;
+	opacity: 0.9;
+}
+.popup-content
+{
+	width: 400px;
+	height: 207px;
+	position: absolute;
+	background: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	border: 8px solid #251f1c;
+	border-radius: 15px;
+	margin: auto;
+}
+.popup-question
+{
+	background: #f5f5f5;
+	font-weight: bold;
+	padding: 17px 60px 14px 66px;
+	color: #444444;
+	border-radius: 15px 15px 0 0;
+}
+.popup-explanation
+{
+	color: #606060;
+	padding: 24px;
+	padding-bottom: 15px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 24px;
+}
+.close-modal
+{
+	border: 1px solid black;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin-left: 25px;
+	margin-right: 10px;
+	width: 160px;
+	height: 35px;
+	padding-top: 6px;
+	border-color: #5b8821;
+	border-radius: 3px;
+	color: white;
+	float: left;
+	background: linear-gradient(to bottom, #d4eaa7, #a6d34d, #a1d04a, #9fcf49, #96cb44, #92c942, #8cc53e, #8ac43d, #84c13a, #80bf38, #7cbe36, #79bc34, #78bb33, #76ba32, #75ba31, #6aad2d);
+}
+.close-modal_no
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	float: left;
+	border-color: #b0333e;
+	background: linear-gradient(to bottom, #fab6c2, #f56d83, #f56c82, #f56b81, #f56a7f, #f5697e, #f4677d, #f4667b, #f46579, #f46378, #f46276, #f36174, #f35f73, #f35e71, #f35c6f, #f25a6d, #f2596b, #f25769, #f25667, #f15465, #f15263, #f15161, #f14f60, #f04e5e, #f04d5c, #f04b5b, #f04a59, #f04957, #ef4756, #ef4655, #ef4553, #ef4452, #df3f4c);
+}
+.close-modal:before
+{
+	content: url(../img/tick.png);
+	border: 1px solid #78bb33;
+	border-radius: 50%;
+	background:  #78bb33;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 2px;
+	right: 5px;
+	padding: 3px;
+}
+.close-modal_no:before
+{
+	content: url(../img/cross.png);
+	border: 1px solid #f34755;
+	background: #f34755;
+}
+.open-modal
+{
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+.popup, .logic
+{
+	display: none;
+}
+.logic:checked ~ .popup
+{
+	opacity: 1;
+	display: block;
+}
